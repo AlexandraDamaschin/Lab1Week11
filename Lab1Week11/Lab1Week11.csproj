@@ -168,6 +168,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClubEventsController.cs" />
+    <Compile Include="Controllers\ClubsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -181,6 +183,10 @@
     <Compile Include="Migrations\ClubMigrations\201712080930260_InitialMigration.cs" />
     <Compile Include="Migrations\ClubMigrations\201712080930260_InitialMigration.Designer.cs">
       <DependentUpon>201712080930260_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ClubMigrations\201712081054187_DatesNullified.cs" />
+    <Compile Include="Migrations\ClubMigrations\201712081054187_DatesNullified.Designer.cs">
+      <DependentUpon>201712081054187_DatesNullified.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ClubMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -250,6 +256,19 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Clubs\Create.cshtml" />
+    <Content Include="Views\Clubs\Delete.cshtml" />
+    <Content Include="Views\Clubs\Details.cshtml" />
+    <Content Include="Views\Clubs\Edit.cshtml" />
+    <Content Include="Views\Clubs\Index.cshtml" />
+    <Content Include="Views\ClubEvents\Create.cshtml" />
+    <Content Include="Views\ClubEvents\Delete.cshtml" />
+    <Content Include="Views\ClubEvents\Details.cshtml" />
+    <Content Include="Views\ClubEvents\Edit.cshtml" />
+    <Content Include="Views\ClubEvents\Index.cshtml" />
+    <Content Include="Views\ClubEvents\_ClubEvents.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates.cshtml" />
+    <Content Include="Views\ClubEvents\_Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -268,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ClubMigrations\201712080930260_InitialMigration.resx">
       <DependentUpon>201712080930260_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ClubMigrations\201712081054187_DatesNullified.resx">
+      <DependentUpon>201712081054187_DatesNullified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
