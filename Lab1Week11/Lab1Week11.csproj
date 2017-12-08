@@ -173,14 +173,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationUsersMigrations\201712080925182_InitialMigration.cs" />
+    <Compile Include="Migrations\ApplicationUsersMigrations\201712080925182_InitialMigration.Designer.cs">
+      <DependentUpon>201712080925182_InitialMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationUsersMigrations\Configuration.cs" />
+    <Compile Include="Migrations\ClubMigrations\201712080930260_InitialMigration.cs" />
+    <Compile Include="Migrations\ClubMigrations\201712080930260_InitialMigration.Designer.cs">
+      <DependentUpon>201712080930260_InitialMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ClubMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClubModels\Club.cs" />
     <Compile Include="Models\ClubModels\ClubContext.cs" />
     <Compile Include="Models\ClubModels\ClubEvent.cs" />
     <Compile Include="Models\ClubModels\Members.cs" />
-    <Compile Include="Models\ClubModels\Student.cs" />
+    <Compile Include="Migrations\ApplicationUsersMigrations\Student.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -193,7 +201,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\ClubModels\MigrationCmds.txt" />
+    <Content Include="Migrations\MigrationCmds.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -253,6 +261,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\ApplicationUsersMigrations\201712080925182_InitialMigration.resx">
+      <DependentUpon>201712080925182_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ClubMigrations\201712080930260_InitialMigration.resx">
+      <DependentUpon>201712080930260_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
